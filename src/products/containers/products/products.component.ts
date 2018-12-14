@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
-import { Pizza } from '../../models/pizza.model';
+import {Pizza} from '../../models/pizza.model';
 import {Store} from "@ngrx/store";
 import {Observable} from "rxjs";
 import * as fromStore from '../../store';
