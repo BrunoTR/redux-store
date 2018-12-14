@@ -1,1 +1,4 @@
-export * from './Reducers';
+export * from './reducers';
+
+export * from './actions';
+

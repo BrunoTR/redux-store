@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import {StoreModule} from "@ngrx/store";
 
+
 // components
 import * as fromComponents from './components';
 
@@ -14,7 +15,7 @@ import * as fromContainers from './containers';
 
 // services
 import * as fromServices from './services';
-import {reducers} from "./Store/Reducers";
+import {reducers} from "./Store/reducers";
 
 // routes
 export const ROUTES: Routes = [
