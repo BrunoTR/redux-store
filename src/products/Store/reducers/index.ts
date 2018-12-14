@@ -20,3 +20,4 @@ export const getPizzaState = createSelector(getProductsState, (state: ProductsSt
 export const getAllPizzas = createSelector(getPizzaState, getPizzas);
 export const getLoadedPizzas = createSelector(getPizzaState, getPizzasLoaded);
 export const getLoadingPizzas = createSelector(getPizzaState, getPizzasLoading);
+
