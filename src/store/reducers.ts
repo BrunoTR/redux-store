@@ -1,3 +1,5 @@
+import * as fromActions from './actions';
+
 export const initialState = {
   loaded: false,
   loading: false,
@@ -9,13 +11,22 @@ export function reducer (
   action: { type: string, payload: any }
 ){
   switch(action.type) {
-    case 'ADD_TODO' : {
+    case fromActions.ADD_TODO : {
       const todo = action.payload;
       const data = [...state.data, todo];
       return {
         ...state, data: data
       }
     }
+
+    case fromActions.REMOVE_TODO: {
+      const todo = action.payload;
+      const data = state.data.filter(td => td.label !== todo.label);
+      return {
+        ...state, data
+      };
+    }
+
   }
   return state;
 }
